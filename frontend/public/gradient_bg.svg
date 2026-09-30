@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 635" width="500" height="635" fill="none">
+  <defs>
+    <radialGradient id="mesh" cx="30%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#ff6b35" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#f7c59f" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#fff9f5" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#mesh)" rx="100" filter="blur(40px)"/>
+</svg>

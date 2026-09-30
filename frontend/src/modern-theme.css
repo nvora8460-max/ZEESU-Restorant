@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bg-color: #0d0d12;
+  --text-primary: #ffffff;
+  --text-secondary: #94a3b8;
+  --accent-color: #e63946;
+  --accent-hover: #ff4d5a;
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+* {
+  font-family: 'Inter', sans-serif !important;
+  color: black;
+}
+
+body {
+  background-color: var(--bg-color) !important;
+  color: var(--text-primary) !important;
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+nav {
+  background: var(--glass-bg) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border-bottom: 1px solid var(--glass-border) !important;
+  max-width: 100% !important;
+  min-width: 100% !important;
+  padding: 20px 5% !important;
+  margin: 0 !important;
+  position: sticky !important;
+  top: 0;
+  z-index: 1000;
+  display: flex !important;
+  align-items: center !important;
+}
+
+nav::after {
+  display: none !important;
+}
+
+nav .logo {
+  font-weight: 700 !important;
+  letter-spacing: 2px !important;
+  color: var(--accent-color) !important;
+}
+
+nav .navLinks .links a {
+  color: var(--text-secondary) !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  letter-spacing: 0.5px !important;
+  transition: all 0.3s ease !important;
+}
+
+nav .navLinks .links a:hover {
+  color: var(--accent-color) !important;
+}
+
+nav .menuBtn {
+  background: var(--accent-color) !important;
+  color: #fff !important;
+  border: none !important;
+  padding: 10px 24px !important;
+  font-weight: 600 !important;
+  border-radius: 30px !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 15px rgba(230, 57, 70, 0.3) !important;
+}
+
+nav .menuBtn:hover {
+  background: var(--accent-hover) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(230, 57, 70, 0.4) !important;
+}
+
+/* HERO SECTION & CONTAINERS */
+.container {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 0 20px !important;
+}
+
+.heading {
+  font-size: 3rem !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  -webkit-background-clip: text;
+}
+
+/* RESERVATION FORM */
+.reservation {
+  padding: 80px 0 !important;
+}
+
+.reservation .container {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 50px !important;
+  align-items: center !important;
+}
+
+.reservation_form_box {
+  background: var(--glass-bg) !important;
+  border: 1px solid var(--glass-border) !important;
+  padding: 40px !important;
+  border-radius: 24px !important;
+  backdrop-filter: blur(10px) !important;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5) !important;
+}
+
+.reservation_form_box h1 {
+  font-size: 2.2rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 10px !important;
+}
+
+.reservation_form_box p {
+  color: var(--text-secondary) !important;
+  margin-bottom: 30px !important;
+  font-size: 1rem !important;
+}
+
+.reservation_form_box form {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 20px !important;
+}
+
+.reservation_form_box form > div {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 20px !important;
+}
+
+.reservation_form_box input {
+  width: 100% !important;
+  padding: 16px 20px !important;
+  background: rgba(0, 0, 0, 0.2) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 12px !important;
+  color: #fff !important;
+  font-size: 1rem !important;
+  transition: all 0.3s ease !important;
+  outline: none !important;
+}
+
+.reservation_form_box input:focus {
+  border-color: var(--accent-color) !important;
+  box-shadow: 0 0 0 2px rgba(230, 57, 70, 0.2) !important;
+}
+
+.reservation_form_box input::placeholder {
+  color: #64748b !important;
+}
+
+.reservation_form_box button[type="submit"] {
+  width: 100% !important;
+  padding: 18px !important;
+  background: var(--accent-color) !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 12px !important;
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 10px !important;
+  margin-top: 10px !important;
+}
+
+.reservation_form_box button[type="submit"]:hover {
+  background: var(--accent-hover) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* RESPONSIVE */
+@media (max-width: 968px) {
+  .reservation .container {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .heading {
+    font-size: 2.5rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  nav .navLinks {
+    display: none !important;
+  }
+  
+  nav .hamburger {
+    display: block !important;
+    font-size: 24px !important;
+    cursor: pointer !important;
+  }
+  
+  .reservation_form_box form > div {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .reservation_form_box {
+    padding: 25px !important;
+  }
+}
+
+/* ADDITIONAL MODERN STYLES */
+.imageBox img, img {
+  border-radius: 16px !important;
+  transition: transform 0.5s ease !important;
+}
+
+.imageBox img:hover {
+  transform: scale(1.05) !important;
+}
+
+.heroSection .container {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 30px !important;
+  padding: 60px 20px !important;
+}
+
+.title {
+  font-size: 4rem !important;
+  font-weight: 800 !important;
+  background: linear-gradient(45deg, var(--accent-color), #ff8a65);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 !important;
+}
+
+@media (min-width: 768px) {
+  .heroSection .container {
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+  
+  .heroSection .banner {
+    flex: 1 !important;
+  }
+  
+  .title {
+    font-size: 6rem !important;
+  }
+}
+
+.about .container, .team .container {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 40px !important;
+  padding: 80px 20px !important;
+}
+
+@media (min-width: 768px) {
+  .about .container {
+    flex-direction: row !important;
+    align-items: center !important;
+  }
+}
+
+.about .mid {
+  font-size: 1.1rem !important;
+  line-height: 1.8 !important;
+  color: var(--text-secondary) !important;
+  margin-bottom: 20px !important;
+}
+
+a {
+  cursor: pointer !important;
+}
+

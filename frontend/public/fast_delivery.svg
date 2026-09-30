@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="80" height="80">
+  <defs>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff6b35"/>
+      <stop offset="100%" stop-color="#ffb38a"/>
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="20" fill="#fff9f5"/>
+  <circle cx="50" cy="50" r="35" fill="none" stroke="#ffe5d9" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <!-- Delivery Cloche with Speed Lines -->
+  <path d="M 55 35 A 18 18 0 0 0 37 53 L 73 53 A 18 18 0 0 0 55 35 Z" fill="url(#primaryGrad)"/>
+  <path d="M 33 57 L 77 57 L 73 61 L 37 61 Z" fill="#111"/>
+  <circle cx="55" cy="32" r="3" fill="#111"/>
+  <!-- Speed lines -->
+  <line x1="23" y1="42" x2="31" y2="42" stroke="#ff6b35" stroke-width="2" stroke-linecap="round"/>
+  <line x1="20" y1="48" x2="28" y2="48" stroke="#ff6b35" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="24" y1="54" x2="29" y2="54" stroke="#ff6b35" stroke-width="2" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="400" height="250" fill="none">
+  <defs>
+    <linearGradient id="glow404" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff6b35"/>
+      <stop offset="100%" stop-color="#ffb38a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Number 4 (Left) -->
+  <text x="50" y="170" font-family="'Oswald', sans-serif" font-size="160" font-weight="bold" fill="#111">4</text>
+
+  <!-- Plate as '0' (Center) -->
+  <g transform="translate(200, 110)">
+    <circle cx="0" cy="0" r="60" fill="none" stroke="url(#glow404)" stroke-width="6"/>
+    <circle cx="0" cy="0" r="50" fill="none" stroke="#ffe5d9" stroke-width="1.5" stroke-dasharray="4,4"/>
+    
+    <!-- Cutlery crossing in center -->
+    <path d="M -15 -25 L -15 15 M -18 -25 L -18 5 M -12 -25 L -12 5" stroke="#111" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 15 -25 L 15 25" stroke="#111" stroke-width="2"/>
+    <path d="M 12 5 L 12 25" stroke="#111" stroke-width="2"/>
+    <path d="M -15 15 L -15 25" stroke="#111" stroke-width="2"/>
+  </g>
+
+  <!-- Number 4 (Right) -->
+  <text x="280" y="170" font-family="'Oswald', sans-serif" font-size="160" font-weight="bold" fill="#111">4</text>
+  
+  <!-- Food crumbs / Sparkles -->
+  <circle cx="115" cy="50" r="4" fill="#ff6b35"/>
+  <circle cx="285" cy="60" r="3" fill="#ff6b35"/>
+  <circle cx="210" cy="205" r="5" fill="#f7c59f"/>
+</svg>

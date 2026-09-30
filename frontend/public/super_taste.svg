@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="80" height="80">
+  <defs>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff6b35"/>
+      <stop offset="100%" stop-color="#ffb38a"/>
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="20" fill="#fff9f5"/>
+  <circle cx="50" cy="50" r="35" fill="none" stroke="#ffe5d9" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <!-- Cloche / Dome -->
+  <path d="M 50 30 A 20 20 0 0 0 30 50 L 70 50 A 20 20 0 0 0 50 30 Z" fill="url(#primaryGrad)"/>
+  <!-- Plate / Base -->
+  <path d="M 25 55 L 75 55 L 70 59 L 30 59 Z" fill="#111"/>
+  <!-- Handle -->
+  <circle cx="50" cy="27" r="4" fill="#111"/>
+  <!-- Sparkles -->
+  <path d="M 25 35 L 27 38 L 30 35 L 27 32 Z" fill="#ff6b35"/>
+  <path d="M 75 35 L 77 38 L 80 35 L 77 32 Z" fill="#ff6b35"/>
+</svg>

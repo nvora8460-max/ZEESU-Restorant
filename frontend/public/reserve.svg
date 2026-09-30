@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 800" width="100%" height="100%" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="darkBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141412"/>
+      <stop offset="50%" stop-color="#1c1a17"/>
+      <stop offset="100%" stop-color="#0f0e0d"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="70%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#ff6b35" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  
+  <rect width="100%" height="100%" fill="url(#darkBg)"/>
+  <rect width="100%" height="100%" fill="url(#glow)"/>
+  
+  <!-- Subtle Elegant Lines -->
+  <g stroke="#f7c59f" stroke-width="0.5" fill="none" opacity="0.15">
+    <circle cx="100%" cy="50%" r="200"/>
+    <circle cx="100%" cy="50%" r="400"/>
+    <circle cx="100%" cy="50%" r="600"/>
+    <circle cx="100%" cy="50%" r="800"/>
+    
+    <path d="M 0 100 Q 300 250 600 100 T 1200 150"/>
+    <path d="M 0 700 Q 400 550 800 700 T 1440 650"/>
+  </g>
+</svg>
