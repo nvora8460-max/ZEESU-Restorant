@@ -3,6 +3,7 @@ import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
 import axios from 'axios';
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
+import { reservationApi } from '../api/apiInstance';
 
 const Reservation = () => {
   const [firstName, setFirstName] = useState('');
@@ -22,16 +23,7 @@ const Reservation = () => {
     
     const loadingToast = toast.loading("Sending your reservation request...");
     try {
-      const { data } = await axios.post(
-        'http://localhost:4000/api/v1/reservation/send',
-        { firstName, lastName, email, phone: phone.toString(), date, time },
-        {
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          withCredentials: true,
-        }
-      );
+      const { data } = await reservationApi({ firstName, lastName, email, phone, date, time });
       toast.success(data.message, { id: loadingToast });
       setFirstName('');
       setLastName('');

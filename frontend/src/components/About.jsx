@@ -8,10 +8,10 @@ const About = () => {
       <div className="container">
         <div className="banner">
           <div className="top">
-            <p>ABOUT US</p>
-            <h1 className="heading">The only thing we're serious about is food.</h1>
+            <p style={{fontSize:"50px"}}>ABOUT US</p>
+            <h1 className="heading" style={{fontSize:"30px"}}>The only thing we're serious about is food.</h1>
           </div>
-          <p className="mid">
+          <p className="mid" >
             At ZEESU, we believe that dining is not just about eating, but about experiencing. 
             Our chefs combine fresh organic ingredients with passionate culinary mastery to construct 
             an unforgettable dining journey. From classic family meals to modern culinary innovations, 

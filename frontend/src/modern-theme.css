@@ -12,7 +12,7 @@
 
 * {
   font-family: 'Inter', sans-serif !important;
-  color: black;
+  color: red;
 }
 
 body {
@@ -229,8 +229,8 @@ nav .menuBtn:hover {
 }
 
 .title {
-  font-size: 4rem !important;
-  font-weight: 800 !important;
+  font-size: 10px !important;
+  font-weight: 100 !important;
   background: linear-gradient(45deg, var(--accent-color), #ff8a65);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -249,7 +249,7 @@ nav .menuBtn:hover {
   }
   
   .title {
-    font-size: 6rem !important;
+    font-size: 5rem !important;
   }
 }
 
@@ -268,9 +268,9 @@ nav .menuBtn:hover {
 }
 
 .about .mid {
-  font-size: 1.1rem !important;
+  font-size: 1.2rem !important;
   line-height: 1.8 !important;
-  color: var(--text-secondary) !important;
+  color: black !important;
   margin-bottom: 20px !important;
 }
 
