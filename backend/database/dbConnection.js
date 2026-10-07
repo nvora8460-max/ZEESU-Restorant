@@ -1,7 +1,8 @@
 import mongoose from "mongoose";
+import env from "../config/config.js";
 
 export const dbConnection = async () => {
-    mongoose.connect(process.env.MONGO_URL, {
+    mongoose.connect(env.MONGO_URL, {
         dbName: "RESTAURANT"
     }).then(() => {
         console.log("connected to db successfully");
